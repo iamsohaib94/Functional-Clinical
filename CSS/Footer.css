@@ -1,0 +1,143 @@
+/*-----Footer------*/
+
+#footer-p2 {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(51, 122, 183);
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    border-top: solid 2px #fff;
+}
+
+#ffrm {
+    height: auto !important;
+    ;
+    width: auto !important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+#f1 {
+    height: 12rem;
+    /* background-color: red; */
+    text-align: center;
+    color: #fff;
+    padding-top: 2vh;
+}
+
+#email {
+    border: none;
+    margin-top: 1.5vh;
+    border-radius: 5px;
+    color: #000;
+    padding-left: 5px;
+    outline: none;
+}
+
+#email:focus {
+    outline: none;
+    border: none;
+}
+
+#fcopy {
+    margin-top: 3vh;
+}
+
+#fsubmit {
+    margin-top: 1.5vh;
+    border: solid 1px #fff;
+    background-color: rgb(51, 122, 183);
+    outline: none;
+    border-radius: 5px;
+    color: #fff
+}
+
+#f2 {
+    height: 12rem;
+    /* background-color: yellow; */
+    color: #fff;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 0.5vw;
+}
+
+.icon:nth-child(1):hover {
+    color: #4267B2;
+}
+
+.icon:nth-child(2):hover {
+    color: #1DA1F2;
+}
+
+.icon:nth-child(3):hover {
+    color: #00aff0;
+}
+
+.icon:nth-child(4):hover {
+    color: #f2003c;
+}
+
+.icon:nth-child(5):hover {
+    color: #0e76a8;
+}
+
+.icon:nth-child(6):hover {
+    color: #25D366;
+}
+
+#icon-holder {
+    margin-top: 2vh;
+}
+
+#condition {
+    margin-top: 7vh;
+}
+
+
+/***************** footer start *****************/
+
+.foot1 {
+    padding: 60px;
+}
+
+.sub {
+    padding: 12px 50px;
+    background: #50cedd;
+    border: none;
+}
+
+.inp {
+    padding: 12px 50px;
+    border: none;
+}
+
+.foot_one {
+    text-align: left;
+}
+
+#foot_two {
+    float: right;
+}
+
+#foot_twoo {
+    float: right;
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.line {
+    border: 1px solid #2f9786;
+    width: 90%;
+}
+
+
+/***************** footer end *****************/

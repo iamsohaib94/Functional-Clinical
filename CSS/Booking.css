@@ -1,0 +1,91 @@
+/***************** ebs start *****************/
+
+.one {
+    text-align: center;
+    font-weight: 800;
+    padding: 15px;
+}
+
+.two {
+    text-align: center;
+}
+
+.three {
+    text-decoration: none;
+    color: black;
+}
+
+.three:hover {
+    color: #50cedd;
+    text-decoration: none;
+}
+
+.four {
+    text-align: center;
+    color: #50cedd;
+    padding: 30px;
+}
+
+
+/***************** ebs end *****************/
+
+
+/***************** booking start *****************/
+
+.book1 {
+    background-color: #070e1e;
+    /* width: 100%; */
+    height: 650px;
+}
+
+.book2 {
+    padding: 40px;
+}
+
+.book3 {
+    color: #778c54;
+    text-align: center;
+    font-size: 45px;
+}
+
+.book4 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.inp1[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.inp1[type=email],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.inp1[type=submit] {
+    background-color: #50cedd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+}
+
+.inp1[type=submit]:hover {
+    background-color: #50cedd;
+}
+
+
+/**************** booking end *****************/

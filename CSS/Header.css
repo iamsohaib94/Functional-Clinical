@@ -1,0 +1,463 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+#header {
+    height: auto;
+    padding: 0px;
+    z-index: 20;
+    transition: 0.5s ease;
+    border-bottom: 1px solid rgba(175, 170, 170, 1.00);
+}
+
+.posfix {
+    position: fixed;
+}
+
+#upper-header {
+    height: auto;
+    background-color: #000000;
+    text-align: center;
+}
+
+#upper-header a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #FFFFFF;
+}
+
+.active {
+    color: #50cedd!important;
+}
+
+#main-header {
+    height: 4rem;
+    background-color: #FFFFFF;
+    display: flex;
+    text-transform: uppercase;
+}
+
+#logo {
+    height: 3rem;
+    width: 5.5rem;
+    /* padding: 0.3vw; */
+    position: absolute;
+    display: block;
+    margin-left: 4vw;
+    margin-top: 0.5rem;
+    background-image: url(../Images/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo a {
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'Marck Script', cursive;
+    text-decoration: none;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    margin-top: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-items {
+    text-decoration: none;
+    color: #000000;
+    /* font-weight: 700; */
+    padding: 0.5vw;
+    /* font-family: 'Merriweather', serif; */
+    transition: 0.3s ease;
+}
+
+.menu-items:hover {
+    color: #50cedd;
+}
+
+#lang_selector {
+    margin-left: 85vw;
+    margin-top: 1vh;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#lang {
+    width: 9vw;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.3vw;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    transition: 0.3s ease;
+    background-image: url(../Images/RightArrow-icon.png);
+    background-position: 7vw;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#lang:focus {
+    outline: none;
+    border: none;
+    background-image: url(../Images/DownArrow-icon.png);
+    background-position: 8rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    padding-left: 2.2rem;
+}
+
+#lang:hover {
+    background-image: url(../Images/DownArrow-icon.png);
+    background-position: 8rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    padding-left: 2.2rem;
+}
+
+.lang_opt {
+    outline: none;
+    border: none;
+}
+
+.lang_opt:focus {
+    outline: none;
+    border: none;
+}
+
+
+/*Ham Burger Menu Box*/
+
+#menu-block {
+    width: 80px;
+    height: 8vh;
+    position: absolute;
+    cursor: pointer;
+    /*	background-color: #000000;*/
+    z-index: 30;
+    display: none;
+    overflow: hidden;
+}
+
+#menu-box {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.close {
+    width: 50%;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 2px;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.close::before,
+.close::after {
+    content: '';
+    height: 4px;
+    background-color: #000000;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.close::before {
+    transform: translateY(-12px);
+    width: 50%;
+}
+
+.close::after {
+    transform: translateY(12px);
+    width: 30%;
+}
+
+
+/*Hamburger Menu Animation*/
+
+.open {
+    width: 50%;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 2px;
+    transform: translateX(-30px);
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.open::before,
+.open::after {
+    content: '';
+    width: 100%!important;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.open::before {
+    transform: rotate(45deg) translateY(-20px) translateX(20px);
+}
+
+.open::after {
+    transform: rotate(-45deg) translateY(20px) translateX(20px);
+}
+
+#SideBar {
+    display: none;
+}
+
+.SideBar-Open {
+    height: 100vh;
+    width: 25vw;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    z-index: 25;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.SideBar-Close {
+    height: 100vh;
+    width: 25vw;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    z-index: 25;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+#SideBar ul {
+    list-style: none;
+    margin-top: 25vh;
+}
+
+#SideBar ul li {
+    margin-top: 2.5vh;
+}
+
+#SideBar ul li a {
+    text-decoration: none;
+    color: #50cedd;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+#SideBar ul li a:hover {
+    color: #50cedd
+}
+
+#block-item {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.73);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 20;
+}
+
+
+/*Responsive CSS*/
+
+@media(max-width: 1400px) {
+    #lang {
+        font-size: 1.3rem;
+        margin-left: 0%;
+    }
+}
+
+@media(max-width: 1200px) {
+    /* #menu
+	{
+		display: none;
+	} */
+    /* .open,
+	.close,
+	#SideBar,
+	#menu-block
+	{
+		display: block;
+	} */
+    #lang {
+        width: 10rem;
+    }
+    #logo {
+        /* margin-left: 42vw; */
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .SideBar-Open,
+    .SideBar-Close {
+        width: 40vw;
+    }
+    #lang {
+        padding: 0.4rem;
+        background-position: 5rem;
+        margin: 0px;
+        left: 0;
+        width: 8rem;
+    }
+    #lang:focus {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        background-position: 6rem;
+    }
+}
+
+@media(max-width: 950px) {
+    #lang {
+        position: absolute;
+        margin-left: 82%;
+    }
+}
+
+@media(max-width: 800px) {
+    .SideBar-Open,
+    .SideBar-Close {
+        width: 100%;
+    }
+    #lang {
+        font-size: 1.2rem;
+        margin-left: 80%;
+        background-size: 12px;
+        width: 7.2rem;
+    }
+    #logo {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    #logo {
+        margin-left: 40%;
+        font-size: 2rem;
+    }
+    .menu-items {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .open,
+    .open::before,
+    .open::after,
+    .close,
+    .close::before {
+        width: 2.3rem;
+    }
+    .close::after {
+        width: 1.3rem;
+    }
+}
+
+@media(max-width: 600px) {
+    #lang {
+        font-size: 1.2rem;
+        margin-left: 76%;
+        background-size: 12px;
+        width: 7.2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    #lang {
+        font-size: 1rem;
+        margin-left: 74%;
+        background-size: 10px;
+        width: 7rem;
+    }
+    .menu-items {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 450px) {
+    #logo {
+        margin-left: 38%;
+    }
+    #lang {
+        font-size: 0.8rem;
+        margin-left: 75%;
+        background-size: 9px;
+        width: 5.5rem;
+        background-position: 3.2rem;
+        margin-top: 0.5vh;
+    }
+    #lang:focus {
+        background-position: 4rem;
+    }
+    .menu-items {
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .open,
+    .open::before,
+    .open::after,
+    .close,
+    .close::before {
+        width: 2rem;
+    }
+    .close::after {
+        width: 1rem;
+    }
+    #logo {
+        margin-left: 31%;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 360px) {
+    #lang {
+        margin-left: 72%;
+        width: 5rem;
+    }
+    .menu-items {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,290 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#CR1 {
+    height: 101vh;
+    width: 100%;
+    background-image: url(../Images/CRBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding-top: 12vh; */
+}
+
+#imageBox {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(8, 8, 8, 0.5);
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+#box1 {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.img {
+    height: auto;
+    /* background-color: #ff9a9c; */
+    /* border: solid thin #000000; */
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+#box2 {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.inner {
+    height: 25vh;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    animation: animate 5s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(0.8, 0.8);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    75% {
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.inner-image1 {
+    background-image: url(../Images/service1.jpg);
+}
+
+.inner-image2 {
+    background-image: url(../Images/Formulation.jpg);
+}
+
+.inner-image3 {
+    background-image: url(../Images/Analysis\ and\ Trials.jpg);
+}
+
+.inner-image4 {
+    background-image: url(../Images/graphics1.jpg);
+}
+
+.inner-image5 {
+    background-image: url(../Images/Pacakgings.jpg);
+}
+
+.inner-image6 {
+    background-image: url(../Images/Marketing-Sales\ Consulting.jpg);
+}
+
+.img p {
+    height: auto;
+    color: #ffffff;
+    /* background-color: #ff9a9c; */
+}
+
+
+/* Responsive CSS */
+
+@media(max-width: 1000px) {
+    .img {
+        width: 30%;
+    }
+}
+
+@media(max-width: 700px) {
+    .img {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 500px) {
+    #CR1 {
+        height: auto;
+    }
+    #imageBox {
+        height: auto;
+        padding-bottom: 0rem;
+    }
+    .img {
+        height: 45vh;
+        width: 80%;
+        margin-top: 0rem;
+    }
+    #box1 {
+        display: inherit;
+    }
+    #box2 {
+        display: inherit;
+    }
+}
+
+@media(max-width: 350px) {
+    .img {
+        width: 70%;
+    }
+}
+
+
+/***************** certified start *****************/
+
+.cert1 {
+    padding: 20px;
+}
+
+.fca4 {
+    width: 85%;
+    text-align: center;
+    background: white;
+    padding: 14px;
+    margin-top: -46%;
+    margin-left: 8%;
+}
+
+.fca5 {
+    color: #50cedd;
+    font-size: 18px;
+}
+
+.fca6 {
+    background: transparent;
+    border: 1px solid #50cedd;
+    padding: 10px 15px;
+    color: #50cedd;
+}
+
+.fca7 {
+    background: #50cedd;
+    border: 1px solid #50cedd;
+    padding: 15px 20px;
+    color: white;
+    width: 100%;
+}
+
+.fca8 {
+    text-decoration: none;
+    color: white;
+}
+
+.fca8:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/***************** certified end *****************/
+
+/* --------------MODAL------------- */
+
+.Modal
+{
+    height: auto;
+    width: 80vw;
+    background-color: #fff;
+    /* background-image: linear-gradient(90deg, #5BC7D7, lightgreen); */
+    box-shadow: 0 0 5px 5px rgb(8, 8, 8, 0.3);
+    position: fixed;
+    z-index: 15;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    padding-bottom: 1rem;
+    display: none;
+}
+.Remove
+{
+    height: auto;
+    /* background-color: yellow; */
+    padding-top: 5px;
+    padding-right: 2rem;
+    text-align: right;
+}
+.Xx
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.Xx:hover
+{
+    color: red;
+    font-weight: 700;
+}
+.ModalText h1
+{
+    text-align: center;
+    color: #000;
+    padding-left: 1.5vw;
+}
+.ModalText p
+{
+    text-align: justify;
+    padding-left: 3vw;
+    padding-right: 0vw;
+    font-weight: 500;
+    color: #000;
+}
+.ModalImage
+{
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ModalImage1
+{
+    background-image: url('../Images/12.jpg');
+}
+@media(max-width: 991px)
+{
+    .Modal
+    {
+        height: 80vh;
+        width: 90vw;
+        margin-left: 5vw;
+        overflow-y: scroll !important;
+        /* margin-top: 10vh; */
+    }
+    .Remove
+    {
+        padding-right: 1rem;
+    }
+    .ModalInner
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ModalText
+    {
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 450px)
+{
+    .Modal
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
+}

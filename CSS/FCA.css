@@ -1,0 +1,615 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+#Main
+{
+	height: auto;
+	width: 100%;
+	position: absolute;
+	background-image: url("../Images/FCA-BG1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#item-holder
+{
+	height: auto;
+	width: 100%;
+	margin-top: 10vh;
+	overflow: hidden;
+}
+/*Form Buttons (Next, Previous, Submit)*/
+#btn-holder
+{
+	height: auto;
+	width: 70vw;
+	background-color: rgba(255,183,250,0.80);
+	box-shadow: 10px 40px 20px 0px rgba(62,62,62,0.7);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vh;
+}
+.btn
+{
+	width: 20vw;
+	height: 4rem;
+	font-size: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4vh;
+	border: 2px solid #FFFFFF;
+	background-color: transparent;
+	font-weight: 500;
+	margin-bottom:4vh;
+	outline: none;
+}
+.btn:focus
+{
+	outline: none;
+}
+.next1
+{
+	display: block;
+}
+.next2
+{
+	margin-left: 1vw;
+}
+.next3
+{
+	display: none;
+}
+.pre1
+{
+	margin-right: 1vw!important;
+	display: none;
+}
+.pre2
+{
+	display: block;
+}
+.submit
+{
+	display: none;
+}
+.submit2
+{
+	display: block;
+	margin-left: 1vw;
+}
+/*---Block 1---*/
+.block
+{
+	height: auto;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255,183,250,0.92);
+	box-shadow: 7px  10px  20px  0px rgba(62,62,62,0.8);
+}
+#quiz
+{
+	font-size: 3.5rem;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	padding-top: 5vh;
+	color: #333333;
+}
+#input-holder
+{
+	margin-top: 10vh;
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+/*	background-color: aliceblue;*/
+}
+.Name
+{
+	position: absolute;
+}
+.input__field
+{
+	width: 100%;
+	border: none;
+	height: 2.5rem;
+	font-size: 1.2rem;
+/*	border-radius: 19px;*/
+	padding-left: 0.5rem;
+	background-color: transparent;
+	color: #333333;
+	border-bottom: 2px solid #333333;
+	transition: 0.5s ease;
+}
+::placeholder
+{
+	color: #333333;
+}
+:-ms-input-placeholder
+{
+	color: #333333;
+}
+::-ms-input-placeholder
+{
+	color: #333333;
+}
+.input__field:focus
+{
+	outline: none;
+	padding-bottom: 1rem;
+}
+#AgeGender
+{
+	height: auto;
+	width: 100%;
+	margin-top: 4vh;
+}
+#label-age
+{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #333333;
+}
+#Age
+{
+	width: 10vw;
+	height: 2rem;
+	border: 1px solid #333333;
+	font-size: 1.2rem;
+	background-color: transparent;
+	color: #333333;
+}
+#Age:focus
+{
+	outline: none;
+}
+#Age option
+{
+	color: #000000;
+}
+#label_Gender
+{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #333333;
+}
+.gen
+{
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: #333333;
+}
+.radio
+{
+	background-color: transparent;
+}
+#label-concern
+{
+	margin-top: 3vh;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #333333;
+}
+#Concern
+{
+	height: auto;
+	width: 100%;
+	margin-top: 2vh;
+	padding-bottom: 5rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #333333;
+}
+#other
+{
+	width: 100%;
+	padding-bottom: 5rem;
+	margin-bottom: 2rem;
+	background-color: rgba(255,255,255,0.32);
+	color: #333333;
+	font-size: 1.1rem;
+	font-weight: 500;
+	display: none;
+}
+#other:focus
+{
+	outline: none;
+}
+/*---Block 2---*/
+#b2-content
+{
+	width: 95%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5vh;
+}
+#b2-p
+{
+	color: #333333;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+#b2-image
+{
+	height: auto;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 3vh;
+}
+.b2-img
+{
+	height: 27vh;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.b2-active
+{
+	box-shadow:  0px 0px 15px 10px rgba(241, 105, 180, 1);
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+
+
+/*---Block 3---*/
+#b3-content
+{
+	height: auto;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.b3-same
+{
+	height: auto;
+	width: 100%;
+	display: none;
+}
+.b3-p
+{
+	color: #333333;
+	font-size: 1.4rem;
+	font-weight: 500;
+	padding-top: 2rem;
+	text-align: center;
+}
+#face-body label:nth-child(1)
+{
+	margin-left: 29vw;
+	font-size: 1.1rem;
+}
+#face-body label:nth-child(2)
+{
+	font-size: 1.1rem;
+}
+#Face
+{
+	display: block;
+	font-size: 1.2rem;
+	text-align: center;
+}
+#Body
+{
+	display: none;
+	font-size: 1.2rem;
+}
+#faces
+{
+	height: auto;
+	width: 100%;
+}
+.faceLine1
+{
+	width: 100%;
+	height: auto;
+	/* background-color:rgba(241, 105, 180, 1); */
+	margin: 0px;
+}
+.faceLine1:nth-child(2)
+{
+	margin-top: 1rem;
+}
+.face1
+{
+	height: 30vh;
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	/* margin-bottom: 3rem; */
+}
+.face1:nth-child(1)
+{
+	background-image: url('../Images/rem/1.png');
+}
+.face1:nth-child(2)
+{
+	background-image: url('../Images/rem/2.png');
+}
+.face1:nth-child(3)
+{
+	background-image: url('../Images/rem/3.png');
+}
+.face1:nth-child(4)
+{
+	background-image: url('../Images/rem/4.png');
+}
+.face1:nth-child(5)
+{
+	background-image: url('../Images/rem/5.png');
+}
+.face1:nth-child(6)
+{
+	background-image: url('../Images/rem/6.png');
+}
+.face1:nth-child(7)
+{
+	background-image: url('../Images/rem/7.png');
+}
+.face1:nth-child(8)
+{
+	background-image: url('../Images/rem/8.png');
+}
+.faceActive
+{
+	/* height: 27vh;
+	width: 25%; */
+	box-shadow:  0px 0px 15px 10px rgba(241, 105, 180, 1);
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+}
+#body-heading
+{
+	text-align: center;
+}
+#body-con
+{
+	height: auto;
+	width: 100%;
+	/* background-color: red; */
+}
+#body-img
+{
+	height: 30vh;
+	width: 16vw;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../Images/rem/Skin.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.b3-itemHolder
+{
+	width: 100%;
+	height: auto;
+	/* background-color: lime; */
+	margin-top: 1.5rem;
+	display: flex;
+}
+
+.b3-itemHolder p
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0px;
+	margin-left: 10px;
+	border: solid thin #000000;
+	cursor: pointer;
+	
+}
+.b3-itemblock
+{
+	display: flex;
+	width: 100%;
+}
+.b3-itemblock p
+{
+	width: 100%;
+}
+.roman
+{
+	padding-right: 0vw!important;
+	padding-left: 0vw!important;
+	width: 2.5rem!important;
+	text-align: center;
+}
+.b3-itemActive
+{
+	color: #FFFFFF;
+	border: solid thin #FFFFFF!important;
+}
+/*Responsive CSS*/
+
+@media(max-width:1400px)
+{
+	.b3-itemHolder p
+	{
+		font-size: 1rem;
+	}
+}
+@media(max-width: 1200px)
+{
+	.b3-itemHolder p
+	{
+		height: 100%;
+	}
+	.b3-itemblock
+	{
+		display: block;
+		margin-right: 10px;
+	}
+	.b3-itemblock p
+	{
+		height: auto!important;
+	}
+	.b3-itemblock p:nth-child(2)
+	{
+		margin-top: 10px;
+	}
+	#label_Gender
+	{
+		margin-top: 1vh;
+	}
+}
+@media(max-width: 1050px)
+{
+	.gen
+	{
+		font-size: 1rem;
+	}
+}
+@media(max-width: 900px)
+{
+	.btn
+	{
+		width: 25vw;
+		font-size: 3vw;
+	}
+}
+@media (max-width: 767px)
+{
+	.face1
+	{
+		/* margin-top: 0vh!important; */
+		/* margin-bottom: 0vh!important; */
+		background-size: 90%;
+	}
+	#body-img
+	{
+		width: 25vw;
+	}
+}
+@media(max-width: 600px)
+{
+	.block
+	{
+		width: 80vw;
+	}
+	#btn-holder
+	{
+		width: 80vw;
+	}
+	#quiz
+	{
+		font-size: 2rem;
+	}
+	#Age
+	{
+		width: 5rem;
+		height: 1.7rem;
+	}
+	.btn
+	{
+		font-size: 4vw;
+		height: auto;
+	}
+	#b2-p
+	{
+		font-size: 1.1rem;
+	}
+}
+@media (max-width: 500px)
+{
+	#face-body label:nth-child(1)
+	{
+		margin-left: 22vw;
+	}
+	#body-img
+	{
+		width: 40vw;
+	}
+}
+@media(max-width: 450px)
+{
+	#input-holder
+	{
+		width: 90%;
+	}
+	.input__field
+	{
+		font-size: 0.9rem;
+		padding: 0px;
+	}
+	#label_Gender
+	{
+		font-size: 1.2rem;
+		margin-top: 2vh;
+	}
+	#label-age
+	{
+		font-size: 1.2rem;
+	}
+	#label-concern
+	{
+		font-size: 1.2rem;
+	}
+	#Concern
+	{
+		padding-left: 4vw;
+		height: auto;
+		font-size: 0.9rem;
+	}
+	.btn
+	{
+		font-size: 4.5vw;
+		height: auto;
+		padding: 0px;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.face1
+	{
+		/* margin-top: 0vh!important; */
+		/* margin-bottom: 0vh!important; */
+		background-size: 95%;
+	}	
+
+
+}
+@media(max-width: 400px)
+{
+	#b2-p
+	{
+		font-size: 4.3vw;
+	}
+	.face1
+	{
+		background-size: 99%;
+	}
+	#body-img
+	{
+		width: 70%;
+	}
+}
+@media(max-width: 350px)
+{
+	#label_Gender
+	{
+		display: block;
+	}
+	#face-body label:nth-child(1)
+	{
+		margin-left: 19vw;
+	}
+}

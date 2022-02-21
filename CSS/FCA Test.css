@@ -1,0 +1,582 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+/* --------FCA Test Page 1 ------*/
+
+.one {
+    text-align: center;
+    font-weight: 800;
+    padding: 15px;
+}
+
+.two {
+    text-align: center;
+}
+
+.two a {
+    text-decoration: none;
+    color: #000;
+}
+
+.two a:hover {
+    color: #5BC7D7;
+}
+
+#Main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+#leftBox {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+#rightBox {
+    width: 60%;
+    height: 80vh;
+    background-color: #EAECF4;
+    /* border-left: solid 5px #000; */
+    margin-top: 5vh;
+}
+
+#FCAlogo {
+    height: 40%;
+    width: 65%;
+    background-image: url(../Images/logoFCA2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10vh;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+
+#progress {
+    width: 83%;
+    height: 0.9rem;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #5BC7D7;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#innerBar {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    border-radius: 15px;
+    transform: translateX(-100%);
+    animation: progress 1s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#lItem {
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+}
+
+#question {
+    font-size: 2.5rem;
+    /* font-weight: 500; */
+    color: #50cedd;
+    margin-left: 1.9vw;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.skinConcern {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    width: 30%;
+    height: 2.5rem;
+    border: solid 1px #000;
+    padding-left: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.skinConcern:hover {
+    background-color: #5CC7D7 !important; 
+    color: #fff;
+}
+
+#next {
+    height: 3.5rem;
+    width: 80%;
+    left: 0;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #5BC7D7;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+#msg {
+    width: 80%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2vh;
+    display: none;
+}
+
+
+/* --------FCA Test Page 2 ------*/
+
+#FullName {
+    width: 60%;
+    margin-left: 2vw;
+    height: 6vh;
+    font-size: 1.3rem;
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+}
+
+
+/* --------FCA Test Page 3 ------*/
+
+#Age {
+    margin-left: 2.5vw;
+    width: 40%;
+    font-size: 1.2rem;
+}
+
+.Gender {
+    border: solid 1.5px #000;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+}
+
+#Male {
+    margin-left: 2.5vw;
+}
+
+#question-pg3 {
+    font-size: 2.5rem;
+    /* font-weight: 500; */
+    color: #5BC7D7;
+    margin-left: 1.9vw;
+    margin-top: 4vh;
+}
+
+
+/* --------FCA Test Page 4 ------*/
+
+.pics {
+    height: 50vh;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.m:nth-child(1) {
+    background-image: url('../Images/Man/1.png');
+}
+
+.m:nth-child(2) {
+    background-image: url('../Images/Man/2.png');
+}
+
+.m:nth-child(3) {
+    background-image: url('../Images/Man/3.png');
+}
+
+.m:nth-child(4) {
+    background-image: url('../Images/Man/4.png');
+}
+
+.m:nth-child(5) {
+    background-image: url('../Images/Man/5.png');
+}
+
+.f:nth-child(1) {
+    background-image: url('../Images/Women/11.png');
+}
+
+.f:nth-child(2) {
+    background-image: url('../Images/Women/22.png');
+}
+
+.f:nth-child(3) {
+    background-image: url('../Images/Women/33.png');
+}
+
+.f:nth-child(4) {
+    background-image: url('../Images/Women/44.png');
+}
+
+.f:nth-child(5) {
+    background-image: url('../Images/Women/55.png');
+}
+
+.acc {
+    background-color: #5BC7D7;
+    box-shadow: 0 0 1vw 0.5vw #5BC7D7;
+}
+
+#txtholder {
+    display: none;
+}
+
+
+/* --------FCA Test Page 5 ------*/
+
+#b3-content {
+    height: auto;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.b3-same {
+    height: auto;
+    width: 100%;
+    display: none;
+    margin-top: 0px;
+}
+
+.b3-p {
+    color: #333333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+#radio-Holder {
+    /* background-color:hsla(208, 56%, 46%, 0.6); */
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#face-body label {
+    font-size: 1.3rem;
+}
+
+#Face {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#Body {
+    display: none;
+    font-size: 1.2rem;
+}
+
+#faces {
+    height: auto;
+    width: 100%;
+}
+
+.faceLine1 {
+    width: 100%;
+    height: auto;
+    /* background-color:rgba(241, 105, 180, 1); */
+    margin: 0px;
+}
+
+.faceLine1:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.face1 {
+    height: 30vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    /* margin-bottom: 3rem; */
+}
+
+.face1:nth-child(1) {
+    background-image: url('../Images/rem/1.png');
+}
+
+.face1:nth-child(2) {
+    background-image: url('../Images/rem/2.png');
+}
+
+.face1:nth-child(3) {
+    background-image: url('../Images/rem/3.png');
+}
+
+.face1:nth-child(4) {
+    background-image: url('../Images/rem/4.png');
+}
+
+.face1:nth-child(5) {
+    background-image: url('../Images/rem/5.png');
+}
+
+.face1:nth-child(6) {
+    background-image: url('../Images/rem/6.png');
+}
+
+.face1:nth-child(7) {
+    background-image: url('../Images/rem/7.png');
+}
+
+.face1:nth-child(8) {
+    background-image: url('../Images/rem/8.png');
+}
+
+.faceActive {
+    /* height: 27vh;
+	width: 25%; */
+    box-shadow: 0 0 1vw 0.5vw #5BC7D7;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    z-index: 5;
+}
+
+#body-heading {
+    text-align: center;
+}
+
+#body-con {
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#body-img {
+    height: 30vh;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../Images/rem/Skin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b3-itemHolder {
+    width: 100%;
+    height: auto;
+    /* background-color: lime; */
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.b3-itemHolder p {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px;
+    margin-left: 10px;
+    border: solid thin #000000;
+    cursor: pointer;
+}
+
+.b3-itemblock {
+    display: flex;
+    width: 100%;
+}
+
+.b3-itemblock p {
+    width: 100%;
+}
+
+.roman {
+    padding-right: 0vw!important;
+    padding-left: 0vw!important;
+    width: 2.5rem!important;
+    text-align: center;
+}
+
+.b3-itemActive {
+    color: #5BC7D7;
+    border: solid thin #5BC7D7!important;
+}
+
+#next5 {
+    height: 3.5rem;
+    width: 25%;
+    left: 0;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #5BC7D7;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+#smart-button-container {
+    display: none;
+}
+
+#smart-button-container .paypal-button-number-1 {
+    display: none;
+}
+
+
+/* Responsive Css */
+
+@media(max-width:1400px) {
+    .b3-itemHolder p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .b3-itemHolder p {
+        height: 100%;
+    }
+    .b3-itemblock {
+        display: block;
+        margin-right: 10px;
+    }
+    .b3-itemblock p {
+        height: auto!important;
+    }
+    .b3-itemblock p:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 960px) {
+    #rightBox {
+        display: none;
+    }
+    #lItem {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #Main {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 800px) {
+    #FullName {
+        width: 80%;
+        height: 5vh;
+        font-size: 1.6rem;
+    }
+    #Age {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .face1 {
+        /* margin-top: 0vh!important; */
+        /* margin-bottom: 0vh!important; */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #body-img {
+        width: 40%;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 576px) {
+    .pics {
+        height: 25vh;
+        background-size: 60%;
+        margin-top: 1vh;
+    }
+    .pics:nth-child(4) {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+    .pics:nth-child(5) {
+        margin-left: 5px;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 550px) {
+    #question {
+        font-size: 1.5rem;
+    }
+    .skinConcern {
+        width: 47%;
+        margin-left: 0.5rem;
+    }
+    #next {
+        width: 50%;
+    }
+    #next5 {
+        width: 50%;
+    }
+}
+
+@media(max-width: 500px) {
+    #FullName {
+        width: 90%;
+        height: 6vh;
+        font-size: 1.6rem;
+    }
+    #body-img {
+        width: 60%;
+    }
+}
+
+@media(max-width: 400px) {
+    .pics {
+        background-size: 80%;
+    }
+}
+
+@media(max-width: 380px) {
+    .skinConcern {
+        width: 47%;
+        margin-left: 0.3rem;
+    }
+    #body-img {
+        width: 75%;
+    }
+}
